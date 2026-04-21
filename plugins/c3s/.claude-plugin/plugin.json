@@ -1,0 +1,8 @@
+{
+  "name": "c3s",
+  "description": "C3S customer service platform plugin. Query tickets, view complaint details, and analyze media attachments.",
+  "version": "1.0.0",
+  "author": {
+    "name": "CamScanner"
+  }
+}

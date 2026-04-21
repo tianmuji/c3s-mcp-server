@@ -1,0 +1,14 @@
+{
+  "name": "c3s-plugins",
+  "owner": {
+    "name": "CamScanner"
+  },
+  "plugins": [
+    {
+      "name": "c3s",
+      "description": "C3S customer service platform plugin. Query tickets, view complaint details, and analyze media attachments.",
+      "source": "./plugins/c3s",
+      "category": "development"
+    }
+  ]
+}
