@@ -1,5 +1,5 @@
 {
-  "name": "@camscanner/c3s-mcp-server",
+  "name": "@camscanner/CSWeb-c3s-mcp",
   "version": "1.0.1",
   "description": "MCP Server for querying C3S customer service platform tickets",
   "main": "dist/index.js",
