@@ -1,6 +1,6 @@
 {
   "c3s": {
-    "command": "node",
-    "args": ["/Users/yujie_wu/yapi/c3s-mcp-server/dist/index.js"]
+    "command": "npx",
+    "args": ["-y", "@camscanner/c3s-mcp-server@latest"]
   }
 }
