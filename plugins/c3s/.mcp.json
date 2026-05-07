@@ -1,6 +1,6 @@
 {
   "c3s": {
     "command": "npx",
-    "args": ["-y", "@camscanner/c3s-mcp-server@latest"]
+    "args": ["-y", "--registry", "https://npm.intsig.net/", "@camscanner/c3s-mcp-server@latest"]
   }
 }
