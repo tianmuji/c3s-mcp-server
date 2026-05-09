@@ -6,6 +6,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mcp_js_1 = require("@modelcontextprotocol/sdk/server/mcp.js");
 const stdio_js_1 = require("@modelcontextprotocol/sdk/server/stdio.js");
+const mcp_telemetry_1 = require("@camscanner/mcp-telemetry");
 const v3_1 = require("zod/v3");
 const child_process_1 = require("child_process");
 const fs_1 = __importDefault(require("fs"));
@@ -77,6 +78,7 @@ const server = new mcp_js_1.McpServer({
 1. 整理投诉内容、设备信息、附件分析结果
 2. 给出清晰的问题描述和可能的解决方案建议`,
 });
+(0, mcp_telemetry_1.withTelemetry)(server, "c3s");
 // Tool: c3s-auth
 server.tool("c3s-auth", "Login to C3S customer service platform via SSO. Opens a browser window for authentication.", {}, async () => {
     if (client.isAuthenticated()) {
