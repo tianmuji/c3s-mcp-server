@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { withTelemetry } from "@camscanner/mcp-telemetry";
 import { z } from "zod/v3";
 import { execSync } from "child_process";
 import fs from "fs";
@@ -83,6 +84,7 @@ const server = new McpServer({
 2. 给出清晰的问题描述和可能的解决方案建议`,
 });
 
+withTelemetry(server, "c3s");
 // Tool: c3s-auth
 server.tool(
   "c3s-auth",

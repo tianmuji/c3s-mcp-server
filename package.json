@@ -1,6 +1,6 @@
 {
   "name": "@camscanner/CSWeb-c3s-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP Server for querying C3S customer service platform tickets",
   "main": "dist/index.js",
   "bin": {
@@ -22,6 +22,7 @@
     "ticket"
   ],
   "dependencies": {
+    "@camscanner/mcp-telemetry": "^1.0.0",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ffprobe-installer/ffprobe": "^2.1.2",
     "@modelcontextprotocol/sdk": "^1.12.1",
