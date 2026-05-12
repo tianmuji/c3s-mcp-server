@@ -22,13 +22,15 @@
 claude plugins marketplace add https://gitlab.intsig.net/cs-templates/skills/cs-web-agent-plugins.git
 
 # 2. 安装插件
-claude plugins install c3s@cs-web-agent-plugins
+claude plugins install cs-c3s-mcp-server@cs-web-agent-plugins
 ```
 
 安装后重启 Claude Code 即可使用。插件会自动注册 MCP Server 和 `/c3s` Skill。
 
 ### 前提条件
 
+- Claude Code >= 1.0
+- Git >= 2.22（需支持 partial clone）
 - Node.js >= 18
 - Playwright Chromium（用于浏览器登录）：`npx playwright install chromium`
 
