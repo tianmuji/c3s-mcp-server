@@ -443,6 +443,8 @@ async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
   console.error("C3S MCP Server running on stdio");
+
+  process.stdin.on("close", () => process.exit(0));
 }
 
 main().catch((err) => {
